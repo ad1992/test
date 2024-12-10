@@ -1,0 +1,703 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "id" : "1",
+    "uri" : "pipelines/Python_Bitbucket_Pipeline",
+    "language" : "python",
+    "fabricId" : "1",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.pythonparentbitbucket.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.webapp.functions", "prophecy.streaming.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "Subgraph_1",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ {
+              "name" : "c_string_sg_1",
+              "kind" : {
+                "type" : "string",
+                "value" : "test"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            } ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "test-config-1",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "42",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "45",
+      "projectName" : "ProphecyWebAppPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "44",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "43",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "python_bitbucket_pipeline",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "K-4HJl5ePz136U1HRcDzq$$efYqGb7gxhV-4iLARwdgx",
+    "source" : "6TPB9ksEzyxOUEGQq4UaD$$s7W1yG84qxvn_O053K1rS",
+    "sourcePort" : "l3BEkMq1pLzJWaTzPwCk2$$Z903R5lccI9M1Wm4c9ld2",
+    "target" : "qdGlCUFnbu8HGHXbQhr98$$fZ5579003SoyIfQB8aI1k",
+    "targetPort" : "FWwNp-65nnWvTzTkqCo0v$$xMCwQVxzUUlAjQiZkASF9"
+  }, {
+    "id" : "HbKc4Om1EzI5g6zn47xk0$$EoIe1-YruGPG_JukhUAxb",
+    "source" : "qdGlCUFnbu8HGHXbQhr98$$fZ5579003SoyIfQB8aI1k",
+    "sourcePort" : "m47VPSrSRYoTlzk9pMQoC$$xLkQHm0QGvsFZG3IQALOF",
+    "target" : "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+    "targetPort" : "xCZJbfdZgKxBICJZFs8UO$$M8b16PMVaI87Lujpqo77-"
+  }, {
+    "id" : "r0mGKtS87-DBR9ympn5tD",
+    "source" : "qdGlCUFnbu8HGHXbQhr98$$fZ5579003SoyIfQB8aI1k",
+    "sourcePort" : "m47VPSrSRYoTlzk9pMQoC$$xLkQHm0QGvsFZG3IQALOF",
+    "target" : "7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l",
+    "targetPort" : "pSpQ-6ubGYNBd3lB0ssBm$$B6A14jMJ9Pjcjv7LjJ5tr"
+  } ],
+  "processes" : {
+    "6TPB9ksEzyxOUEGQq4UaD$$s7W1yG84qxvn_O053K1rS" : {
+      "id" : "6TPB9ksEzyxOUEGQq4UaD$$s7W1yG84qxvn_O053K1rS",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dataset_bitbucket_csv",
+        "slug" : "dataset_bitbucket_csv",
+        "x" : -940,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "l3BEkMq1pLzJWaTzPwCk2$$Z903R5lccI9M1Wm4c9ld2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/dataset_bitbucket_csv"
+      }
+    },
+    "qdGlCUFnbu8HGHXbQhr98$$fZ5579003SoyIfQB8aI1k" : {
+      "id" : "qdGlCUFnbu8HGHXbQhr98$$fZ5579003SoyIfQB8aI1k",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -540,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FWwNp-65nnWvTzTkqCo0v$$xMCwQVxzUUlAjQiZkASF9",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "m47VPSrSRYoTlzk9pMQoC$$xLkQHm0QGvsFZG3IQALOF",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.0.4&projectSubscriptionProjectId=42&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM" : {
+      "id" : "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : -200,
+        "y" : -60,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xCZJbfdZgKxBICJZFs8UO$$M8b16PMVaI87Lujpqo77-",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "zaXQfocKVj16UBKFL4Zvm$$QiTYKw-6steLuyLV1PPhB",
+          "slug" : "out0"
+        }, {
+          "id" : "w80iPAe9tu53J01Umr7Wk$$ccn0QLmSsrRy_GplD_nEW",
+          "slug" : "out1"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "packageName" : "parentmain.bitbucket.prentBitbucketSG",
+        "externalId" : "subgraphs/prentBitbucketSG",
+        "name" : "prentBitbucketSG"
+      },
+      "connections" : [ {
+        "id" : "TUy44yHbcdykwIYbWI37D",
+        "source" : "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+        "sourcePort" : "xCZJbfdZgKxBICJZFs8UO$$M8b16PMVaI87Lujpqo77-",
+        "target" : "WDyeV5rj5lKMo5IfjPswY$$Dnr1NPSYqaWqHmwxKVCvW",
+        "targetPort" : "Zhf8-TDKlr8hACwVvDsqr$$SFbcipV7XPDsgnlb142a6"
+      }, {
+        "id" : "0OfiJgi9ODShEfl7XGF8F",
+        "source" : "WDyeV5rj5lKMo5IfjPswY$$Dnr1NPSYqaWqHmwxKVCvW",
+        "sourcePort" : "XE3Bp5DraqiVUhnjwS0jW$$jGFJnx0gaS5P3hPVxxo5L",
+        "target" : "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+        "targetPort" : "zaXQfocKVj16UBKFL4Zvm$$QiTYKw-6steLuyLV1PPhB"
+      }, {
+        "id" : "PnncSOtcq2ToKtNDFESI3",
+        "source" : "WDyeV5rj5lKMo5IfjPswY$$Dnr1NPSYqaWqHmwxKVCvW",
+        "sourcePort" : "XE3Bp5DraqiVUhnjwS0jW$$jGFJnx0gaS5P3hPVxxo5L",
+        "target" : "Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq",
+        "targetPort" : "VsRG-3SEsK5-Ja0PtqklH$$cG_u0dscefnwZkAoOl4MN"
+      }, {
+        "id" : "y-TukX-xwz38Ow20e4TkT",
+        "source" : "Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq",
+        "sourcePort" : "FZYNBBDWw80ph8bCr0eBN$$lWpYltp91B_tq-FGlR7I3",
+        "target" : "kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+        "targetPort" : "w80iPAe9tu53J01Umr7Wk$$ccn0QLmSsrRy_GplD_nEW"
+      } ],
+      "processes" : {
+        "WDyeV5rj5lKMo5IfjPswY$$Dnr1NPSYqaWqHmwxKVCvW" : {
+          "id" : "WDyeV5rj5lKMo5IfjPswY$$Dnr1NPSYqaWqHmwxKVCvW",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_2",
+            "slug" : "Reformat_2",
+            "x" : -660,
+            "y" : -20,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "Zhf8-TDKlr8hACwVvDsqr$$SFbcipV7XPDsgnlb142a6",
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "customer_id",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "first_name",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "last_name",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "phone",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "email",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "country_code",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "account_open_date",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "account_flags",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "XE3Bp5DraqiVUhnjwS0jW$$jGFJnx0gaS5P3hPVxxo5L",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ {
+              "target" : "c_udf_parent",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "udf_bitbucket(1)"
+              },
+              "description" : ""
+            }, {
+              "target" : "c_config",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "concat('$c_string_sg_1', 'hello')"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.0.4&projectSubscriptionProjectId=42&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq" : {
+          "id" : "Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq",
+          "component" : "CustomReformatBitbucket",
+          "metadata" : {
+            "label" : "CustomReformatBitbucket_2",
+            "slug" : "CustomReformatBitbucket_2",
+            "x" : -320,
+            "y" : 140,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "VsRG-3SEsK5-Ja0PtqklH$$cG_u0dscefnwZkAoOl4MN",
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "c_udf_parent",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "c_config",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "FZYNBBDWw80ph8bCr0eBN$$lWpYltp91B_tq-FGlR7I3",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
+          },
+          "componentInfo" : {
+            "gemId" : "gems/CustomReformatBitbucket",
+            "projectName" : "Python_Parent_Bitbucket"
+          }
+        }
+      },
+      "externalDependencies" : [ ]
+    },
+    "7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l" : {
+      "id" : "7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l",
+      "component" : "CustomReformatBitbucket",
+      "metadata" : {
+        "label" : "CustomReformatBitbucket_1",
+        "slug" : "CustomReformatBitbucket_1",
+        "x" : -220,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pSpQ-6ubGYNBd3lB0ssBm$$B6A14jMJ9Pjcjv7LjJ5tr",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "4wqvld8Z9SxGP5W87QziL$$_Utf8FY3Pp4c-ityh106_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gems/CustomReformatBitbucket",
+        "projectName" : ""
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

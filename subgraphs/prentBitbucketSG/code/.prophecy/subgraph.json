@@ -1,0 +1,174 @@
+{
+  "id" : "kOzy0OTRig82myvtcuM_S",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "c_string_sg_1",
+          "kind" : {
+            "type" : "string",
+            "value" : "test"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        } ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "xCZJbfdZgKxBICJZFs8UO",
+      "slug" : "in0",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "zaXQfocKVj16UBKFL4Zvm",
+      "slug" : "out0",
+      "isStreaming" : false
+    }, {
+      "id" : "w80iPAe9tu53J01Umr7Wk",
+      "slug" : "out1",
+      "isStreaming" : false
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "parentmain.bitbucket.prentBitbucketSG"
+  },
+  "connections" : [ {
+    "id" : "TUy44yHbcdykwIYbWI37D",
+    "source" : "kOzy0OTRig82myvtcuM_S",
+    "sourcePort" : "xCZJbfdZgKxBICJZFs8UO",
+    "target" : "WDyeV5rj5lKMo5IfjPswY",
+    "targetPort" : "Zhf8-TDKlr8hACwVvDsqr"
+  }, {
+    "id" : "0OfiJgi9ODShEfl7XGF8F",
+    "source" : "WDyeV5rj5lKMo5IfjPswY",
+    "sourcePort" : "XE3Bp5DraqiVUhnjwS0jW",
+    "target" : "kOzy0OTRig82myvtcuM_S",
+    "targetPort" : "zaXQfocKVj16UBKFL4Zvm"
+  }, {
+    "id" : "PnncSOtcq2ToKtNDFESI3",
+    "source" : "WDyeV5rj5lKMo5IfjPswY",
+    "sourcePort" : "XE3Bp5DraqiVUhnjwS0jW",
+    "target" : "Qza8paeHo8r1uh1xj7Cum",
+    "targetPort" : "VsRG-3SEsK5-Ja0PtqklH"
+  }, {
+    "id" : "y-TukX-xwz38Ow20e4TkT",
+    "source" : "Qza8paeHo8r1uh1xj7Cum",
+    "sourcePort" : "FZYNBBDWw80ph8bCr0eBN",
+    "target" : "kOzy0OTRig82myvtcuM_S",
+    "targetPort" : "w80iPAe9tu53J01Umr7Wk"
+  } ],
+  "processes" : {
+    "WDyeV5rj5lKMo5IfjPswY" : {
+      "id" : "WDyeV5rj5lKMo5IfjPswY",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : -660,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Zhf8-TDKlr8hACwVvDsqr",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "XE3Bp5DraqiVUhnjwS0jW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "c_udf_parent",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "udf_bitbucket(1)"
+          },
+          "description" : "",
+          "_row_id" : "c_28"
+        }, {
+          "target" : "c_config",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('$c_string_sg_1', 'hello')"
+          },
+          "description" : "",
+          "_row_id" : "c_29"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.0.4&projectSubscriptionProjectId=42&path=gems/Reformat",
+        "projectId" : "42",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.0.4"
+      }
+    },
+    "Qza8paeHo8r1uh1xj7Cum" : {
+      "id" : "Qza8paeHo8r1uh1xj7Cum",
+      "component" : "CustomReformatBitbucket",
+      "metadata" : {
+        "label" : "CustomReformatBitbucket_2",
+        "slug" : "CustomReformatBitbucket_2",
+        "x" : -320,
+        "y" : 140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VsRG-3SEsK5-Ja0PtqklH",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FZYNBBDWw80ph8bCr0eBN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gems/CustomReformatBitbucket",
+        "projectId" : "59",
+        "projectName" : "Python_Parent_Bitbucket"
+      }
+    }
+  },
+  "externalDependencies" : [ ]
+}

@@ -1,0 +1,122 @@
+name: Python_Parent_Bitbucket
+description: ''
+version: '1.0'
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: pythonparentbitbucket
+  parentArtefactID: abhisheks+e2etests@prophecyioteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-09-27 04:25:02'
+pipelines:
+  pipelines/Python_Bitbucket_Pipeline:
+    name: Python_Bitbucket_Pipeline
+    description: Python_Bitbucket_Pipeline
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-09-27 04:25:26'
+    datasets:
+      inputs:
+      - datasets/dataset_bitbucket_csv
+      outputs: []
+    subgraphs:
+    - subgraphs/prentBitbucketSG
+    dependencies: {}
+datasets:
+  datasets/dataset_bitbucket_csv:
+    name: dataset_bitbucket_csv
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2023-09-27 04:26:09'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2023-09-27 04:26:09'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.2.0
+  gems:
+    gems/CustomReformatBitbucket:
+      name: CustomReformatBitbucket
+      category: NewBitbucketCategory
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - abhishekse2etestsprophecyioteam_pythonparentbitbucket/gems/CustomReformatBitbucket.py
+      createdAt: '2023-09-27 04:30:21'
+functions:
+  author: null
+  createdAt: '2023-09-27 04:25:02'
+  udfs:
+    udfs/udf_bitbucket:
+      name: udf_bitbucket
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+subgraphs:
+  subgraphs/prentBitbucketSG:
+    name: prentBitbucketSG
+    description: parentmain.bitbucket.prentBitbucketSG
+    author: abhisheks+e2etests@prophecy.io
+    language: python
+    artefactID: ''
+    mode: batch
+    createdAt: '2023-09-27 04:26:50'
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '42':
+    projectUID: 42
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=
+    version: 0.0.4
+    isDefault: true
+    author: null
+    createdAt: '2023-09-27 04:24:45'
+  '45':
+    projectUID: 45
+    projectName: ProphecyWebAppPython
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_45.git&subPath=
+    version: 0.0.2
+    isDefault: false
+    author: null
+    createdAt: '2023-09-27 04:24:45'
+  '44':
+    projectUID: 44
+    projectName: ProphecyStreamingPython
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_44.git&subPath=
+    version: 0.0.1
+    isDefault: false
+    author: null
+    createdAt: '2023-09-27 04:24:45'
+  '43':
+    projectUID: 43
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_43.git&subPath=
+    version: 0.0.2
+    isDefault: true
+    author: null
+    createdAt: '2023-09-27 04:24:45'
+pipelineConfigurations: {}
