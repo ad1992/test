@@ -119,8 +119,8 @@
       "metadata" : {
         "label" : "dataset_bitbucket_csv",
         "slug" : "dataset_bitbucket_csv",
-        "x" : -900,
-        "y" : -220,
+        "x" : -960,
+        "y" : -120,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -146,8 +146,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : -840,
-        "y" : 20,
+        "x" : -680,
+        "y" : -140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
