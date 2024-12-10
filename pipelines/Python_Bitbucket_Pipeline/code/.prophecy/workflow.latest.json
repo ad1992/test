@@ -3,6 +3,14 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : false,
+      "plibVersion" : {
+        "mavenVersion" : "8.6.0-SNAPSHOT",
+        "pyPiVersion" : "1.9.27"
+      }
+    },
     "id" : "1",
     "uri" : "pipelines/Python_Bitbucket_Pipeline",
     "language" : "python",
@@ -83,7 +91,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "python_bitbucket_pipeline",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "K-4HJl5ePz136U1HRcDzq$$efYqGb7gxhV-4iLARwdgx",
@@ -571,11 +579,10 @@
           },
           "componentInfo" : {
             "gemId" : "gems/CustomReformatBitbucket",
-            "projectName" : "Python_Parent_Bitbucket"
+            "projectName" : "Aakansha-Clone"
           }
         }
-      },
-      "externalDependencies" : [ ]
+      }
     },
     "7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l" : {
       "id" : "7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l",
@@ -689,7 +696,7 @@
       },
       "componentInfo" : {
         "gemId" : "gems/CustomReformatBitbucket",
-        "projectName" : ""
+        "projectName" : "Aakansha-Clone"
       }
     }
   },

@@ -165,10 +165,9 @@
       },
       "componentInfo" : {
         "gemId" : "gems/CustomReformatBitbucket",
-        "projectId" : "59",
-        "projectName" : "Python_Parent_Bitbucket"
+        "projectId" : "17952",
+        "projectName" : "Aakansha-Clone"
       }
     }
-  },
-  "externalDependencies" : [ ]
+  }
 }
