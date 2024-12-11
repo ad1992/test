@@ -1,7 +1,8 @@
 {
   "metainfo" : {
     "migrationVersions" : {
-      "gemBuilderVersion" : "v1"
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
     },
     "functions" : { },
     "codeGenConfiguration" : {
@@ -13,6 +14,9 @@
     },
     "id" : "1",
     "uri" : "pipelines/Python_Bitbucket_Pipeline",
+    "pipelineSettingsInfo" : {
+      "isNullValuesInUnitTestsEnabled" : true
+    },
     "language" : "python",
     "fabricId" : "2926",
     "frontEndLanguage" : "sql",
