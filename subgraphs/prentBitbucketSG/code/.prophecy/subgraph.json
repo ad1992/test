@@ -38,8 +38,7 @@
       "isStreaming" : false
     }, {
       "id" : "w80iPAe9tu53J01Umr7Wk",
-      "slug" : "out1",
-      "isStreaming" : false
+      "slug" : "out1"
     } ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,

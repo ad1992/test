@@ -18,7 +18,7 @@ class Reformat(ComponentSpec):
 
 
 
-    def optimizeCode(self) -> bool:
+    def optimizeCode(self) -> bool7:
         return True
 
     @dataclass(frozen=True)
