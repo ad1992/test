@@ -55,6 +55,7 @@ gemContainer:
       mode: batch
       files:
       - abhishekse2etestsprophecyioteam_pythonparentbitbucket/gems/CustomReformatBitbucket.py
+      - abhishekse2etestsprophecyioteam_pythonparentbitbucket/gems/CustomReformatBitbucket1.py
       gemType: ComponentGem
       dependencies: null
       createdAt: '2023-09-27 04:30:21'
