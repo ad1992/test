@@ -8,7 +8,7 @@
     "codeGenConfiguration" : {
       "editableConfig" : false,
       "plibVersion" : {
-        "mavenVersion" : "8.7.0-SNAPSHOT",
+        "mavenVersion" : "8.6.0-SNAPSHOT",
         "pyPiVersion" : "1.9.28"
       }
     },
@@ -123,8 +123,8 @@
       "metadata" : {
         "label" : "dataset_bitbucket_csv",
         "slug" : "dataset_bitbucket_csv",
-        "x" : -960,
-        "y" : -120,
+        "x" : -1540,
+        "y" : -360,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -150,8 +150,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : -680,
-        "y" : -140,
+        "x" : -1500,
+        "y" : 40,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -265,8 +265,8 @@
       "metadata" : {
         "label" : "Subgraph_1",
         "slug" : "Subgraph_1",
-        "x" : -360,
-        "y" : 160,
+        "x" : -660,
+        "y" : 40,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -594,8 +594,8 @@
       "metadata" : {
         "label" : "CustomReformatBitbucket_1",
         "slug" : "CustomReformatBitbucket_1",
-        "x" : -220,
-        "y" : -280,
+        "x" : -1000,
+        "y" : -140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -710,54 +710,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Gems inside the subgraph are broken",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM.processes.Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for CustomReformatBitbucket",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for CustomReformatBitbucket",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  } ]
+  }
 }

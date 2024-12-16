@@ -10,6 +10,7 @@ def pipeline(spark: SparkSession) -> None:
     df_dataset_bitbucket_csv = dataset_bitbucket_csv(spark)
     df_Reformat_1 = Reformat_1(spark, df_dataset_bitbucket_csv)
     df_Subgraph_1_out0, df_Subgraph_1_out1 = Subgraph_1(spark, Config.Subgraph_1, df_Reformat_1)
+    df_CustomReformatBitbucket_1 = CustomReformatBitbucket_1(spark, df_Reformat_1)
 
 def main():
     spark = SparkSession.builder\
