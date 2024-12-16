@@ -46,8 +46,8 @@ gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0
   gems:
-    gems/CustomReformatBitbucket:
-      name: CustomReformatBitbucket
+    gems/CustomReformatBitbucket12:
+      name: CustomReformatBitbucket12
       category: NewBitbucketCategory
       subCategory: ''
       description: null
@@ -56,8 +56,8 @@ gemContainer:
       files:
       - abhishekse2etestsprophecyioteam_pythonparentbitbucket/gems/CustomReformatBitbucket.py
       gemType: ComponentGem
-      dependencies: null
-      createdAt: '2023-09-27 04:30:21'
+      dependencies: []
+      createdAt: '2024-12-16 10:49:35'
   dependencies: null
 functions:
   author: null
@@ -94,17 +94,17 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-12-10T06:52:03.899086Z'
+  modifiedAt: '2024-12-16T10:49:37.128728Z'
   name: plibMaven
-  version: 8.6.0-SNAPSHOT
-  id: '950781588'
-  createdAt: '2024-12-10T06:52:03.899048Z'
+  version: 8.7.0-SNAPSHOT
+  id: '1309419362'
+  createdAt: '2024-12-16T10:49:37.128562Z'
 - type: plibPypi
-  modifiedAt: '2024-12-10T06:52:03.899127Z'
+  modifiedAt: '2024-12-16T10:49:37.128825Z'
   name: plibPypi
-  version: 1.9.27
-  id: '244485652'
-  createdAt: '2024-12-10T06:52:03.899119Z'
+  version: 1.9.28
+  id: '1655764532'
+  createdAt: '2024-12-16T10:49:37.128795Z'
 projectDependencies:
   '42':
     projectUID: 42

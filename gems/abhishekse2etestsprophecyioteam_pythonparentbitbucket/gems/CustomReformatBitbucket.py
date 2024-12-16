@@ -11,7 +11,7 @@ from prophecy.cb.util.StringUtils import isBlank
 from prophecy.cb.server.base import WorkflowContext
 
 class Reformat(ComponentSpec):
-    name: str = "CustomReformatBitbucket"
+    name: str = "CustomReformatBitbucket12"
     category: str = "NewBitbucketCategory"
     gemDescription: str = "Edits column names or values using expressions."
     docUrl: str = "https://docs.prophecy.io/low-code-spark/gems/transform/reformat/"

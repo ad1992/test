@@ -1,18 +1,22 @@
 {
   "metainfo" : {
     "migrationVersions" : {
-      "gemBuilderVersion" : "v1"
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
     },
     "functions" : { },
     "codeGenConfiguration" : {
       "editableConfig" : false,
       "plibVersion" : {
-        "mavenVersion" : "8.6.0-SNAPSHOT",
-        "pyPiVersion" : "1.9.27"
+        "mavenVersion" : "8.7.0-SNAPSHOT",
+        "pyPiVersion" : "1.9.28"
       }
     },
     "id" : "1",
     "uri" : "pipelines/Python_Bitbucket_Pipeline",
+    "pipelineSettingsInfo" : {
+      "isNullValuesInUnitTestsEnabled" : true
+    },
     "language" : "python",
     "fabricId" : "2926",
     "frontEndLanguage" : "sql",
@@ -706,5 +710,54 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Gems inside the subgraph are broken",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.kOzy0OTRig82myvtcuM_S$$4I4-FJe03KysBlFxU0YhM.processes.Qza8paeHo8r1uh1xj7Cum$$_QaOY0DHH4r3gpaBMGkDq",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for CustomReformatBitbucket",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.7bcn-W5hfk8ubdIfsxHKd$$A5WDL4ZZLwt06ZBnHc_6l",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Could not find the spec for CustomReformatBitbucket",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }
