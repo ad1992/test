@@ -19,7 +19,7 @@ class Reformat(ComponentSpec):
 
 
     def optimizeCode(self) -> bool:
-        return false
+        return true
 
     @dataclass(frozen=True)
     class ReformatProperties(ComponentProperties):
