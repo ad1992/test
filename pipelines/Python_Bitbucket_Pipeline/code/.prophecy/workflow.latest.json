@@ -9,7 +9,7 @@
       "editableConfig" : false,
       "plibVersion" : {
         "mavenVersion" : "8.6.0-SNAPSHOT",
-        "pyPiVersion" : "1.9.27"
+        "pyPiVersion" : "1.9.28"
       }
     },
     "id" : "1",
