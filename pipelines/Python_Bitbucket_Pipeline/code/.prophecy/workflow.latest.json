@@ -265,8 +265,8 @@
       "metadata" : {
         "label" : "Subgraph_1",
         "slug" : "Subgraph_1",
-        "x" : -1120,
-        "y" : -440,
+        "x" : -960,
+        "y" : -500,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
