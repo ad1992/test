@@ -150,8 +150,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : -1540,
-        "y" : -100,
+        "x" : -1420,
+        "y" : -300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
