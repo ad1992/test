@@ -150,8 +150,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : -1840,
-        "y" : -420,
+        "x" : -1660,
+        "y" : -480,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -265,8 +265,8 @@
       "metadata" : {
         "label" : "Subgraph_1",
         "slug" : "Subgraph_1",
-        "x" : -1340,
-        "y" : -520,
+        "x" : -1480,
+        "y" : -240,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
