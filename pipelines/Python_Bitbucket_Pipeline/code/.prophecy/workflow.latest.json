@@ -123,8 +123,8 @@
       "metadata" : {
         "label" : "dataset_bitbucket_csv",
         "slug" : "dataset_bitbucket_csv",
-        "x" : -1760,
-        "y" : -80,
+        "x" : -1660,
+        "y" : -280,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
