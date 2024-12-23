@@ -1,0 +1,37 @@
+{
+  "deduplicate" : {
+    "name" : "deduplicate",
+    "macroType" : "query",
+    "definition" : "\n    select *\n    from {{ relation }}\n    qualify\n        row_number() over (\n            partition by {{ partition_by }}\n            order by {{ order_by }}\n        ) = 1",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "staleState" : "none",
+    "version" : 0
+  }
+}

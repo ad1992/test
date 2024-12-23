@@ -1,0 +1,198 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : { }
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "input##dGjxQsmA" : {
+      "id" : "input##dGjxQsmA",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "input",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "table" : {
+          "name" : "input",
+          "sourceType" : "Seed"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Y7r7KEcf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 0
+    },
+    "deduplicate_1##c7jEwoVO" : {
+      "id" : "deduplicate_1##c7jEwoVO",
+      "component" : "deduplicate",
+      "metadata" : {
+        "label" : "deduplicate_1",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "comment" : "Removes duplicate entries from a dataset to ensure data integrity."
+      },
+      "properties" : {
+        "relation" : "input",
+        "order_by" : "id",
+        "partition_by" : "id",
+        "_oldMacroProperties" : {
+          "macroName" : "deduplicate",
+          "projectName" : "sql_gem_examples",
+          "parameters" : [ {
+            "name" : "relation",
+            "value" : "'input'"
+          }, {
+            "name" : "order_by",
+            "value" : "'id'"
+          }, {
+            "name" : "partition_by",
+            "value" : "'id'"
+          } ]
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nZXqhXQB",
+          "slug" : "input"
+        } ],
+        "outputs" : [ {
+          "id" : "L67b2Ly1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "deduplicate_sql_gem_examples",
+        "name" : "deduplicate",
+        "projectName" : "sql_gem_examples",
+        "sourceProjectName" : "sql_gem_examples"
+      }
+    },
+    "final##XDd8hngy" : {
+      "id" : "final##XDd8hngy",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 420,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM deduplicate_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QwwZlrHU",
+          "slug" : "deduplicate_1"
+        } ],
+        "outputs" : [ {
+          "id" : "OQIQW88H",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "VJxpDNds0NjE-IVkKAnxr$$mL0L3XcyPEMFyhU1u6fyN" : {
+      "id" : "VJxpDNds0NjE-IVkKAnxr$$mL0L3XcyPEMFyhU1u6fyN",
+      "component" : "deduplicate",
+      "metadata" : {
+        "label" : "deduplicated_names",
+        "slug" : "deduplicated_names",
+        "x" : -400,
+        "y" : -200,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Removes duplicate entries based on first and last names for cleaner data management."
+      },
+      "properties" : {
+        "relation" : "input",
+        "order_by" : "first_name",
+        "partition_by" : "last_name",
+        "_oldMacroProperties" : {
+          "macroName" : "deduplicate",
+          "projectName" : "sql_gem_examples",
+          "parameters" : [ {
+            "name" : "relation",
+            "value" : "'input'"
+          }, {
+            "name" : "order_by",
+            "value" : "'first_name'"
+          }, {
+            "name" : "partition_by",
+            "value" : "'last_name'"
+          } ]
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5bLmXmdionyIAxntoaPik$$fOZJQj6pC78Um_THE1hlu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "8T7mwgxpY83IBFLDBYx0X$$0oLD6xNQB-ZnoLEz0nZVH",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "deduplicate_sql_gem_examples",
+        "name" : "deduplicate",
+        "projectName" : "sql_gem_examples",
+        "sourceProjectName" : "sql_gem_examples"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "wvZriARn",
+    "source" : "input##dGjxQsmA",
+    "sourcePort" : "Y7r7KEcf",
+    "target" : "deduplicate_1##c7jEwoVO",
+    "targetPort" : "nZXqhXQB"
+  }, {
+    "id" : "JjY2jxQ9",
+    "source" : "deduplicate_1##c7jEwoVO",
+    "sourcePort" : "L67b2Ly1",
+    "target" : "final##XDd8hngy",
+    "targetPort" : "QwwZlrHU"
+  }, {
+    "id" : "GRtVyHzLn6Re6A9PjFlZX",
+    "source" : "input##dGjxQsmA",
+    "sourcePort" : "Y7r7KEcf",
+    "target" : "VJxpDNds0NjE-IVkKAnxr$$mL0L3XcyPEMFyhU1u6fyN",
+    "targetPort" : "5bLmXmdionyIAxntoaPik$$fOZJQj6pC78Um_THE1hlu"
+  } ],
+  "component" : "Model"
+}
